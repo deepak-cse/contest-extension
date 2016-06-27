@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+
+  "name": "competition alert",
+  "description": "This extension shows the competitive challenges on different sites like codechef and hackerearth",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html",
+    "default_title":"challengers"
+  },
+    
+    "background": {
+    "persistent": false,
+    "scripts": ["background.js"]
+  },
+
+  "icons": { 
+    "16": "icon.png",
+    "48": "icon.png",
+    "64": "icon.png",
+    "128": "icon.png"
+  },
+    
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ]
+}
